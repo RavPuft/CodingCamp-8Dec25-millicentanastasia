@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Web App</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">To-Do List ✨</h1>
+
+        <div class="form">
+            <input id="taskInput" type="text" placeholder="Enter a new task..." />
+            <input id="dateInput" type="date" />
+            <button onclick="addTask()">+</button>
+        </div>
+
+        <div class="controls">
+            <select id="filterStatus" onchange="applyFilter()">
+                <option value="all">All</option>
+                <option value="on-progress">On-Progress</option>
+                <option value="done">Done</option>
+            </select>
+            <button onclick="deleteAll()" class="clear-all">Clear All</button>  
+        </div>
+
+        <table class="task-table">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="todoList"></tbody>
+        </table>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
