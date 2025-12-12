@@ -2,11 +2,11 @@ body {
     font-family: "Poppins", sans-serif;
     background: radial-gradient(circle at top, #1b1029, #0d0717 60%);
     margin: 0;
-    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     color: #e9d7ff;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .container {
